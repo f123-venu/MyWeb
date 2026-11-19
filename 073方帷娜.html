@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
+            font-family: "微软雅黑";
+        }
+        body {
+            background-color: #c9e2fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .menu-wrap {
+            width: 160px;
+        }
+        .first-item {
+            width: 160px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background-color: #91caff;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .first-item > a {
+            color: #fff;
+            font-size: 18px;
+        }
+        .second-box {
+            position: absolute;
+            left: 160px;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: none;
+            white-space: nowrap;
+            padding: 0 10px;
+        }
+        .second-item {
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 16px;
+        }
+        .second-item a {
+            color: #000;
+            font-size: 16px;
+        }
+        .first-item:hover .second-box {
+            display: block;
+        }
+        .first-item:hover {
+            background-color: #5987e4;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-wrap">
+        <div class="first-item">
+            <a href="#">学校概况</a>
+            <div class="second-box">
+                <ul>
+                    <li class="second-item"><a href="#">学校简介</a></li>
+                    <li class="second-item"><a href="#">历史沿革</a></li>
+                    <li class="second-item"><a href="#">校园风光</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="first-item">
+            <a href="#">机构设置</a>
+            <div class="second-box">
+                <ul>
+                    <li class="second-item"><a href="#">职能部门</a></li>
+                    <li class="second-item"><a href="#">教学院系</a></li>
+                    <li class="second-item"><a href="#">科研平台</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="first-item">
+            <a href="#">教育教学</a>
+            <div class="second-box">
+                <ul>
+                    <li class="second-item"><a href="#">本科教育</a></li>
+                    <li class="second-item"><a href="#">研究生教育</a></li>
+                    <li class="second-item"><a href="#">继续教育</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
